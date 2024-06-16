@@ -3,6 +3,7 @@ APP_ENV=local
 APP_KEY=base64:NpLn3HnRSzsmfRx3P7U4k9zP4r4T9/VTtNjm8StDwHM=
 APP_DEBUG=true
 APP_URL=http://jetete.test
+APP_DOMAIN=jetete.test
 
 LOG_CHANNEL=stack
 LOG_DEPRECATIONS_CHANNEL=null
