@@ -54,9 +54,9 @@ class TenancyCreateCommand extends Command
             $databaseExists = DB::select("SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = ?", [$database]);
 
             if (!empty($databaseExists)) {
-                $this->info('The database already exists.');
+                $this->info('Tenant database already exists.');
             } else {
-                $this->info('Creating the database.');
+                $this->info('The tenant database will be created.');
 
                 // Iniciando a transação no banco de dados principal
                 DB::beginTransaction();
